@@ -167,6 +167,13 @@ If the VLE storage attribute is supported, with VLE=0.
    ``hotpluggable``        O      ``<empty>``              Specifies an explicit hint to the operating
                                                            system that this memory may potentially be
                                                            removed later.
+   ``arm,mte-alloc``       O      ``<empty>``              Indicates that the storage location for
+                                                           allocation tags used by the ARM Memory Tagging
+                                                           Extension is either not accessible via regular
+                                                           loads and stores to physical memory, or is
+                                                           fully described by /reserved-memory/ child
+                                                           nodes with the ``compatible`` property being
+                                                           equal to ``arm,mte-tag-storage``.
    Usage legend: R=Required, O=Optional, OR=Optional but Recommended, SD=See Definition
    =======================================================================================================
 
